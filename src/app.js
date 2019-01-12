@@ -1,13 +1,27 @@
 import React, { Component} from "react";
-import {hot} from "react-hot-loader";
+import Feeds from './feeds'
+import { Form, Input } from 'semantic-ui-react'
+
+const twitterInterval = null
+const instagramInterval = null
 
 class App extends Component{
+  constructor(props) {
+    super(props)
+    this.state = {
+      term: '', tweets: [], grams: []
+    }
+  }
+  search() {
+    alert('entered!')
+  }
   render(){
     return(
-      <div className="App">
-        <h1>Hello World</h1>
-      </div>
-    );
+      <Form onSubmit={this.search}>
+        <Input placeholder='Search for a hashtag!'/>
+        <Feeds/>
+      </Form>
+    )
   }
 }
 
