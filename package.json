@@ -12,7 +12,7 @@
     "start:dev": "webpack-dev-server --mode production --hot",
     "build:watch": "webpack --watch",
     "postinstall": "webpack --mode production",
-    "local": "run-p start build:watch"
+    "local": "run-p start:local build:watch"
   },
   "repository": {
     "type": "git",
