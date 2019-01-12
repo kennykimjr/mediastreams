@@ -15,6 +15,7 @@ class Feeds extends Component{
           <List.Content>
             <List.Header>{tweets[tweet].user.name}</List.Header>
             {tweets[tweet].text}
+            <div>{tweets[tweet].created_at}</div>
           </List.Content>
         </List.Item>
       )
